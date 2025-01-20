@@ -62,10 +62,10 @@ def plot_performance(performance):
     绘制收益曲线
     """
     plt.figure(figsize=(12, 6))
-    plt.plot(performance['Time'], performance['ProfitRate'], label='Profit Rate')
+    plt.plot(performance['Time'], performance['ProfitRate'], label='Cumulative Profit')
     plt.title('Strategy Performance Over Time')
     plt.xlabel('Time')
-    plt.ylabel('Profit Rate')
+    plt.ylabel('Cumulative Profit')
     plt.legend()
     plt.grid()
     plt.show()
